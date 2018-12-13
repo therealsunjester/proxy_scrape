@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
 
+.copyleft {
+  display:inline-block;
+  transform: rotate(185deg);
+}
+
 html {
   position: relative;
   min-height: 100%;

@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /proxyscan/
+RewriteRule ^$ index.php
+
+RewriteRule ^home(.*)$ index.php?page=home
+RewriteRule ^register(.*)$ index.php?page=register
+RewriteRule ^login(.*)$ index.php?page=login
+
+RewriteRule ^logout(.*)$ index.php?page=logout
+RewriteRule ^forgot(.*)$ index.php?page=forgot
+
+RewriteRule ^msgs(.*)$ index.php?page=msgs
+RewriteRule ^users(.*)$ index.php?page=users
+RewriteRule ^orders(.*)$ index.php?page=orders
+RewriteRule ^tickets(.*)$ index.php?page=tickets
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^login-now(.*)$ index.php?page=login-now
