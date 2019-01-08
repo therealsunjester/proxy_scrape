@@ -6,5 +6,6 @@ do
 	echo "checking: $line"
 	lynx -dump $line >>proxies;cat proxies |grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\s[0-9]{3,5}'>proxylist
 done
+sed -i s/\\s/:/g proxylist
 cat proxylist
 exit 0
