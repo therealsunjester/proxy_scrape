@@ -1,7 +1,7 @@
 # Proxy Scrape Project
 This project is a PHP project that "scrapes" public proxies from public websites on the internet. This project does nto scan ranges of IP addresses.
 
-### Install via Git
+### Install
 Clone files into your web root.
 
 ```
